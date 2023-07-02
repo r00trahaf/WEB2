@@ -1,0 +1,92 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site2.master.cs" Inherits="WebApplication3.Site2" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    
+    <script type="text/javascript" src="js/JScript.js" ></script>
+    <%--bootstrap css--%>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <%--datatables css--%>
+    <link href="datatables/css/jquery.dataTables.min.css" rel="stylesheet" />
+     <%--fontawesome css--%>
+    <link href="fontawesome/css/all.css" rel="stylesheet" />
+
+        <%--our custom css--%>
+    <link href="css/StyleSheet1.css" rel="stylesheet" />
+     
+
+    <%--jquery--%>
+    <script src="bootstrap/js/jquery-3.3.1.slim.min.js"></script>
+    <%--popper js--%>
+    <script src="bootstrap/js/popper.min.js"></script>
+    <%--bootstrap js--%>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300' rel='stylesheet' type='text/css'/>
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form2" runat="server">
+        
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#">
+                    <img src="imgs/6902312-removebg-preview.png" width="80" hight="80"/>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul id="navcss" class="navbar-nav mr-auto">  
+                      <li class="nav-item active">
+                             <a class="nav-link" href="customerhome.aspx">Home</a>
+                      </li>
+                      <li class="nav-item active ">
+                             <a class="nav-link" href="catalog.aspx">Catalog</a>
+                       </li>
+                          <li class="nav-item active">
+                             <a class="nav-link" href="mypurchase.aspx">My purchase</a>
+                       </li>
+                          <li class="nav-item">
+                             <asp:button  ID="logoutbutton" runat="server" OnClick="logoutbutton_Click" BackColor="#FFCC99" Height="46px" style="margin-left: 34px" Text="Log out">   </asp:button>
+                       </li>
+                         
+                   </ul>
+             </div>
+         </nav>            
+      </div>
+        <!-- Main Content Placeholder -->
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <!-- Main Content Placeholder -->
+
+         <!-- Footer -->
+        <footer>
+             
+            <div id="footer1" class="container-fluid">
+                 
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                        <p> &copy ALL RIGHT REVERSED TO Taibah student  </p>
+                        <div >
+  <asp:imagebutton  class="contact" ImageUrl="imgs/insta.jpeg"  ID="Imagebutton1" runat="server" Height="40px" Width="40px"  />
+  <asp:imagebutton  class="contact" ImageUrl="imgs/mail.jpeg"  ID="Imagebutton2" runat="server" Height="40px" Width="40px"  />
+                       </div>               
+                    </div>
+                </div>
+            </div>
+        </footer>
+        </form>
+   
+</body>
+</html>
