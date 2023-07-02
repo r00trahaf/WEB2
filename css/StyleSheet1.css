@@ -1,0 +1,67 @@
+﻿body {
+    background-image: url('../imgs/backfainl (1).png');
+    background-attachment: fixed ;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#footer1{
+    margin-top: 50px;
+    color: black;
+   
+
+}
+.sec_home {
+    margin-right: 50px;
+    margin-left: 50px;
+    padding: 50px;
+}
+h1{
+    font-family: Serif;
+    color: darkblue ;
+}
+h3, h2{
+    font-family: sans-serif;
+    color:#d7614b ;
+}
+h4 {
+    font-family: sans-serif;
+    color:darkblue;
+}
+
+#navcss {
+    list-style-type: none;
+    font-family: serif;
+    color: antiquewhite;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    color: antiquewhite;
+}
+
+ li {
+    float: left;
+    color: antiquewhite;
+}
+ li a {
+        display: block;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;    
+        color:antiquewhite;
+      }
+ li a:hover {
+   background-color: gray;
+  }
+.btnemail {
+    margin-right: 70px;
+    margin-left: 70px;
+    margin-top: 30px;
+    padding: 15px 20px;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, #4373ab ,#ffffff);
+    border: none;
+}
+    .btnemail:hover {
+        box-shadow: 0 8px 10px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        background-image: linear-gradient(to right, #f5efe1, #ceb670);
+    }
